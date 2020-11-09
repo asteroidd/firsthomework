@@ -1,0 +1,235 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #222222;
+}
+.clearfix:after {
+    content:'';
+    display: table;
+    width: 100%;
+    clear: both;
+}
+header {
+    background: url("./images/Back1.png") no-repeat center top / cover;
+    padding-bottom: 300px;
+    
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.logo {
+    margin: 22px 0 0 15px;
+    float: left;
+}
+nav {
+    float: right;
+    margin: 55px 135px 0 0;
+}
+.menu {
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+.menu li {
+    float: left;
+    display: block;
+    margin-right: 48px;
+}
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+.titles_first {
+    font-size: 150px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 250px;
+}
+h1 {
+    font-size: 25px;
+    color: #11749e;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 19px;
+    margin: 0 0 0 15px;
+}
+#portfolio {
+    background: #11749e;
+    padding-bottom: 120px;
+}
+.title {
+    padding-top: 170px;
+}
+.title h2 {
+    font-size: 38px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 1px;
+} 
+.WeAre {
+    margin-top: 50px;
+}
+.WeAre_item {
+    width: 270px;
+    float: left;
+    text-align: center;
+}
+.WeAre_item h3 {
+    font-size: 18px;
+    color: #fff;
+}
+.WeAre_item p {
+    font-size: 15px;
+    color: #fff;
+    line-height: 1.5em;
+}
+.WeAre_item:last-child {
+    float: right;
+}
+.WeAre_item:nth-child(n+2) {
+    margin-left: 40px;  
+}
+
+
+#letsblog {
+    padding-bottom: 100px;
+}
+.title_second {
+    padding-top: 160px;
+}
+.title_second h2 {
+    font-size: 38px;
+    color: #222222;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+.title_second p {
+    text-align: center;
+    font-size: 30px;
+}
+.blog {
+    margin-top: 70px;
+}
+.blog_img {
+    width: 270px;
+    float: left;
+    text-align: center;
+}
+.blog_img h3 {
+    font-size: 18px;
+    color: #11749e;
+    margin: 40px 0 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+} 
+.blog_img p {
+    font-size: 15px;
+    line-height: 1.5em;
+    letter-spacing: 1px;
+}
+.blog_img:last-child {
+    float: right;
+}
+.blog_img:nth-child(n+2) {
+    margin-left: 38px;  
+}
+#info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 3; width: 50 px;
+    background: #11749e;
+    padding: 75px;
+    padding-bottom: 35px;
+    color: #fff;
+}
+.box1 {
+    align-self: center;
+    font-size: 15px;
+    line-height: 1.5em;
+    letter-spacing: 1px;  
+    padding-bottom: 120px;
+}
+.box2 {
+    align-self: center;
+    font-size: 15px;
+    line-height: 1.5em;
+    letter-spacing: 1px;
+    padding-bottom: 120px;
+}
+
+
+#phone {
+    background: url(./images/Back2.png) no-repeat center top / cover;
+    
+    padding-bottom: 100px;
+}
+.team_img {
+    float: left;
+    text-align: center;
+    margin-top: 40px;
+    padding-bottom: 100px;
+}
+.team_img:last-child {
+    float: right;
+}
+.team_img:nth-child(n+2) {
+    margin-left: 40px;  
+}
+.team_img img {
+    width: 270px; 
+    height: 415px; 
+    object-fit: cover;
+}
+.block {
+    background-color: #fff;
+    /*Как сделать текст поверх картинки?*/
+}
+.team_img h3 {
+    font-size: 20px;
+    color: #11749e;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.team_img p {
+    font-size: 15px;
+    margin: 5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#wedlove {
+    background: url(./images/Back3.png) no-repeat center top / cover;
+    padding-bottom: 95px;
+}
+
+#maps {
+    background: url(./images/Maps.png) no-repeat center top / cover;
+    padding-bottom: 330px;
+}
+footer {
+    background: #222222;
+    padding-bottom: 50px;
+}
+footer p {
+    color: #fff;
+    float: left;
+    font-size: 13px;
+    margin-top: 50px;
+}
+footer img {
+    float: right;
+    margin-top: 40px;
+}
