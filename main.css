@@ -42,6 +42,10 @@ nav {
     text-decoration: none;
     font-size: 20px;
 }
+.links{
+    float: right;
+    padding: 0 0 0 0px;
+}
 .titles_first {
     font-size: 150px;
     font-weight: bold;
@@ -58,6 +62,13 @@ h1 {
     letter-spacing: 19px;
     margin: 0 0 0 15px;
 }
+h2{
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0 0 0;
+}
+
 #portfolio {
     background: #11749e;
     padding-bottom: 120px;
@@ -152,26 +163,52 @@ h1 {
     padding-bottom: 35px;
     color: #fff;
 }
-.box1 {
-    align-self: center;
-    font-size: 15px;
-    line-height: 1.5em;
-    letter-spacing: 1px;  
-    padding-bottom: 120px;
+.box {
+    display: flex;
+    align-items: center;
 }
-.box2 {
-    align-self: center;
-    font-size: 15px;
-    line-height: 1.5em;
-    letter-spacing: 1px;
-    padding-bottom: 120px;
+.box p {
+    margin-left: 10px;
 }
 
 
 #phone {
     background: url(./images/Back2.png) no-repeat center top / cover;
-    
+    display: flex;
+    padding: 100px;
+    color: #fff;
     padding-bottom: 100px;
+}
+.con1 {
+    color: #fff;
+}
+.con1 p{
+    color: #fff;
+}
+.con12 {
+    padding: 100px 0 0 50px;
+    margin: 100px 0 0 50px;
+    background-color:  #11749e;
+    display: block;
+    color: #fff;
+}
+.con13 {
+    padding: 100px 0 0 50px;
+    margin: 100px 0 0 50px;
+    background-color:  #11749e;
+    display: block;
+    color: #fff;
+}
+.con14 {
+    padding: 100px 0 0 50px;
+    margin: 100px 0 0 50px;
+    background-color:  #11749e;
+    display: block;
+    color: #fff;
+}
+
+.con2 {
+    color: #fff;
 }
 .team_img {
     float: left;
