@@ -11,13 +11,15 @@ body {
     clear: both;
 }
 header {
-    background: url("./images/Back1.png") no-repeat center top / cover;
-    padding-bottom: 300px;
-    
+    background: url(../images/Back1.png) no-repeat center top / cover;
+    padding-bottom: 100px;
 }
 .container {
     width: 1200px;
     margin: 0 auto;
+}
+.heading {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 .logo {
     margin: 22px 0 0 15px;
@@ -25,7 +27,7 @@ header {
 }
 nav {
     float: right;
-    margin: 55px 135px 0 0;
+    margin: 55px 15px 0 0;
 }
 .menu {
     padding: 0;
@@ -36,15 +38,23 @@ nav {
     float: left;
     display: block;
     margin-right: 48px;
+    margin-bottom: -1px;
+    border-bottom: 5px solid transparent;
+    padding-bottom: 35px;
+}
+.heading li:hover { 
+    border-bottom-color: #11749e;
 }
 .menu a {
     color: #fff;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
 }
-.links{
+.social{
     float: right;
-    padding: 0 0 0 0px;
+}
+.social img{
+    margin-left: 15px;
 }
 .titles_first {
     font-size: 150px;
@@ -52,7 +62,7 @@ nav {
     color: #fff;
     text-transform: uppercase;
     text-align: center;
-    margin-top: 250px;
+    margin-top: 240px;
 }
 h1 {
     font-size: 25px;
@@ -62,19 +72,47 @@ h1 {
     letter-spacing: 19px;
     margin: 0 0 0 15px;
 }
-h2{
-    font-size: 15px;
-    color: #fff;
+.scroll_down{
+    padding-top: 110px;
     text-align: center;
-    padding: 100px 0 0 0;
+}
+.scroll_down p{
+    color: #fff;
+    font-size: 13px;
+    padding-bottom: 8px;
+}
+
+.position_1{
+    font-size: 250px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    padding-top: 360px; 
+}
+.v1{
+    color: rgba(255, 255, 255, 0.2);
+}
+.position_2{
+    position: relative;
+    justify-content: center;
+    padding-top: 160px;
+    padding-bottom: 70px;
+}
+.v2{
+    color: rgba(0, 0, 0, 0.1);
+}
+.position_1 .v2 p{
+    font-size: 250px;
 }
 
 #portfolio {
     background: #11749e;
-    padding-bottom: 120px;
-}
-.title {
-    padding-top: 170px;
+    padding-bottom: 115px;
 }
 .title h2 {
     font-size: 38px;
@@ -83,9 +121,9 @@ h2{
     text-transform: uppercase;
     margin: 0;
     letter-spacing: 1px;
-} 
-.WeAre {
-    margin-top: 50px;
+}
+.WeAre{
+    padding-top: 70px;
 }
 .WeAre_item {
     width: 270px;
@@ -95,6 +133,8 @@ h2{
 .WeAre_item h3 {
     font-size: 18px;
     color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 .WeAre_item p {
     font-size: 15px;
@@ -108,12 +148,50 @@ h2{
     margin-left: 40px;  
 }
 
+#akita_1{
+    background-image: url(../images/img1.png); 
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: right;
+    background-color: #222222;
+    padding-bottom: 76px;
+}
+.akita_text{
+    padding-top: 60px;
+    color: #fff;
+    margin-left: 25px;
+}
+.akita_text h2{
+    font-size: 13px;
+    margin-bottom: -10px;
+    font-weight: lighter;
+}
+.akita_text h3{
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.akita_text p{
+    font-size: 15px;
+    line-height: 1.5em;
+}
+
+#akita_2{
+    background-image: url(../images/img2.png); 
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-color: #f3f3f3;
+    padding-bottom: 400px;
+}
+#akita_2 .akita_text{
+    padding-top: 60px;
+    color: #000000;
+    margin-right: 100px;
+    float: right;
+}
 
 #letsblog {
-    padding-bottom: 100px;
-}
-.title_second {
-    padding-top: 160px;
+    padding-bottom: 80px;
 }
 .title_second h2 {
     font-size: 38px;
@@ -121,10 +199,16 @@ h2{
     text-align: center;
     text-transform: uppercase;
     margin: 0;
+    letter-spacing: 1px;
 }
 .title_second p {
     text-align: center;
     font-size: 30px;
+    letter-spacing: 1px;
+}
+.title p {
+    text-align: center;
+    font-size: 250px;
 }
 .blog {
     margin-top: 70px;
@@ -144,7 +228,7 @@ h2{
 .blog_img p {
     font-size: 15px;
     line-height: 1.5em;
-    letter-spacing: 1px;
+    letter-spacing: 0.8px;
 }
 .blog_img:last-child {
     float: right;
@@ -152,69 +236,81 @@ h2{
 .blog_img:nth-child(n+2) {
     margin-left: 38px;  
 }
-#info {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 3; width: 50 px;
-    background: #11749e;
-    padding: 75px;
-    padding-bottom: 35px;
-    color: #fff;
-}
-.box {
-    display: flex;
-    align-items: center;
-}
-.box p {
-    margin-left: 10px;
-}
 
+#info {
+    background: #11749e;
+    height: 350px; 
+}
+.info_block{
+    display: inline-block;
+    padding-top: 90px;
+    padding-left: 8px;
+    margin: 0 15px 0 15px;
+}
+.info_block:last-child{
+    float: right;
+}
+.info_block p{
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.6em;
+    letter-spacing: 0.8px;
+}
 
 #phone {
-    background: url(./images/Back2.png) no-repeat center top / cover;
-    display: flex;
-    padding: 100px;
-    color: #fff;
-    padding-bottom: 100px;
+    background: url(../images/Back2.png) no-repeat center top / cover;
+    padding-bottom: 90px;
 }
-.con1 {
+.Phone_Akita{
     color: #fff;
+    margin-left: 25px;
 }
-.con1 p{
-    color: #fff;
+.Phone_Akita img{
+    float: right;
+    padding: 100px 100px 0 0;
 }
-.con12 {
-    padding: 100px 0 0 50px;
-    margin: 100px 0 0 50px;
-    background-color:  #11749e;
-    display: block;
-    color: #fff;
+.Phone_Akita h2{
+    padding-top: 220px;
+    margin: 0;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
 }
-.con13 {
-    padding: 100px 0 0 50px;
-    margin: 100px 0 0 50px;
-    background-color:  #11749e;
-    display: block;
-    color: #fff;
+.Phone_Akita p{
+    font-size: 15px;
+    line-height: 1.5em;
+    letter-spacing: 0.8px;
+    margin: 30px 0 0 0;
 }
-.con14 {
-    padding: 100px 0 0 50px;
-    margin: 100px 0 0 50px;
-    background-color:  #11749e;
-    display: block;
-    color: #fff;
+.Phone_Akita .FHD{
+    padding-top: 40px;
+}
+.Phone_Akita .p_FHD{
+    background-color: #11749e;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 8px 0 8px 20px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+.Phone_Akita .FHD_v1{
+    margin-right: 805px;
+}
+.Phone_Akita .FHD_v2{
+    margin-right: 775px;
+}
+.Phone_Akita .FHD_v3{
+    margin-right: 745px;
 }
 
-.con2 {
-    color: #fff;
+#team .title{
+    padding-bottom: 30px;
 }
 .team_img {
     float: left;
     text-align: center;
     margin-top: 40px;
-    padding-bottom: 100px;
+    padding-bottom: 25px;
 }
 .team_img:last-child {
     float: right;
@@ -229,7 +325,10 @@ h2{
 }
 .block {
     background-color: #fff;
-    /*Как сделать текст поверх картинки?*/
+    position: relative;
+    top:-55px;
+    margin: 0 28px 0 28px;
+    padding: 18px;
 }
 .team_img h3 {
     font-size: 20px;
@@ -248,17 +347,60 @@ h2{
 }
 
 #wedlove {
-    background: url(./images/Back3.png) no-repeat center top / cover;
-    padding-bottom: 95px;
+    background: url(../images/Back3.png) no-repeat center top / cover;
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+.NEP{
+    box-sizing: border-box;
+}
+input{
+    width: 345px;
+    margin: 85px 15px 0 15px;
+    background: none;
+    border: 1px solid #fff;
+    outline: none;
+    font-size: 15px;
+    padding: 10px 0 10px 20px;
+}
+textarea{
+    margin: 35px 15px 45px 15px;
+    width: 1148px;
+    height: 150px;
+    resize: none;
+    background: none;
+    border: 1px solid #fff;
+    outline: none;
+    font-size: 15px;
+    padding: 10px 0 10px 20px;
+}
+#edit{
+    color: #fff;
+}
+::placeholder{
+    color: #fff;
+}
+button{
+    background-color: #11749e;
+    color: #fff;
+    font-size: 24px;
+    outline: none;
+    text-transform: uppercase;
+    border: none;
+    padding: 15px 60px 20px 60px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 #maps {
-    background: url(./images/Maps.png) no-repeat center top / cover;
+    background: url(../images/Maps.png) no-repeat center top / cover;
     padding-bottom: 330px;
 }
+
 footer {
     background: #222222;
-    padding-bottom: 50px;
+    padding-bottom: 35px;
 }
 footer p {
     color: #fff;
